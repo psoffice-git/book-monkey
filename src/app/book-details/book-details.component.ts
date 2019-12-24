@@ -25,7 +25,7 @@ export class BookDetailsComponent implements OnInit {
 
   removeBook() {
     if (confirm('Buch wirklich löschen?')) {
-      this.bsService.remove(this.book.isbn).subscribe(res => this.router.navigate(['../'], {relativeTo: this.route}))
+      this.bsService.remove(this.book.isbn).subscribe(res => this.router.navigate(['../'], {relativeTo: this.route}));
     }
   }
 }
